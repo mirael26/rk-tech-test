@@ -1,0 +1,61 @@
+@use './variables/color.scss';
+
+:root {
+  height: 100%;
+  font-family: 'OpenSans', Geneva, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+body {
+  box-sizing: border-box;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: color.$bg-grey;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: color.$black-default;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+// button {
+//   padding: 0;
+//   border: none;
+//   background-color: transparent;
+//   cursor: pointer;
+// }

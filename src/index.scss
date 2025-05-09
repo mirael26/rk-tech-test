@@ -1,3 +1,10 @@
-.app {
-  background: pink;
-}
+@forward 'style/normalize.css';
+@forward 'style/scaffolding.scss';
+@forward 'style/visually-hidden.scss';
+@forward 'style/variables/color.scss';
+
+@forward 'components/ui/button/button.scss';
+
+@forward 'components/page/page.scss';
+
+@forward 'components/blocks/cat-display/cat-display.scss';

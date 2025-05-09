@@ -1,0 +1,10 @@
+@use '../../style/variables/color.scss';
+
+.page {
+  width: 320px;
+  margin: 40px auto;
+  padding: 17px 30px 12px 9px;
+  background-color: color.$white-default;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 4px color.$shadows;
+}
