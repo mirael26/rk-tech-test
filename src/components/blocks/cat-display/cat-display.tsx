@@ -4,6 +4,8 @@ import CatImage from '../cat-image/cat-image';
 import { getCatImageUrl } from '../../../request';
 import Spinner from '../../ui/spinner/spinner';
 
+const REFRESH_INTERVAL_MS = 5000;
+
 const CatDisplay = () => {
   const [isEnabled, setIsEnabled] = useState(true);
   const [isAutoRefresh, setIsAutoRefresh] = useState(false);
@@ -17,7 +19,7 @@ const CatDisplay = () => {
     }
 
     if (isAutoRefresh) {
-      setTimerId(setInterval(() => getImage(), 5000));
+      setTimerId(setInterval(() => getImage(), REFRESH_INTERVAL_MS));
     }
     return () => clearInterval(timerId);
   }, [isAutoRefresh]);
