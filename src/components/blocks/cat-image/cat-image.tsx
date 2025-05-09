@@ -1,9 +1,9 @@
 interface ICatImageProps {
-  url: string;
+  url?: string | null;
 }
 
 const CatImage = ({ url }: ICatImageProps) => {
-  return <img src={url} />;
+  return !!url && <img src={url} />;
 };
 
 export default CatImage;
